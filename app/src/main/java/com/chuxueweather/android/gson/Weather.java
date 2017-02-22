@@ -1,5 +1,7 @@
 package com.chuxueweather.android.gson;
 
+import com.google.gson.annotations.SerializedName;
+
 import java.util.List;
 
 /**
@@ -13,6 +15,6 @@ public class Weather {
     public Now now;
     public Suggestion suggestion;
 
-    @SuppressWarnings("daily_forecast")
+    @SerializedName("daily_forecast")
     public List<Forecast> forecastList;
 }
